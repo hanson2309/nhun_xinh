@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+.div1 {
+    text-align: end;
+}
+.div2 {
+    display: flex;
+    margin: 15px;
+    gap: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.div3 {
+    width: calc(50% - 10px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#result {
+    margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: 'HCRDotum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.kor {
+    font-family: 'HCRDotum', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.vie {
+    font-family: "Times New Roman", Times, serif;
 }
+

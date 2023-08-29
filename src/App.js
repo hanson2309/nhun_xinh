@@ -44,9 +44,6 @@ class App extends Component {
         let korList = this.split(kor)
         let vieList = this.split(vie)
 
-        console.log(korList)
-        console.log(vieList)
-
         let result = [];
 
         let i = 0;

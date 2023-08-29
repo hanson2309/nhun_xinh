@@ -11,7 +11,8 @@ class App extends Component {
     state = {
         kor: "KOREAN",
         vie: "VIETNAMESE",
-        result: ""
+        result: "",
+        btnText: 'Copy'
     }
 
     // constructor(props) {
@@ -33,6 +34,9 @@ class App extends Component {
     }
 
     merge = () => {
+        this.setState({
+            btnText: 'Copy'
+        })
         const blankRow = "<p>&nbsp;</p>"
         let kor = this.state.kor
         let vie = this.state.vie.replaceAll("<p>&nbsp;</p>", "")
@@ -74,6 +78,7 @@ class App extends Component {
 
         // this.copyTextWithStyles(element)
     }
+
 
     split = (src) => {
         return src.replaceAll("</p><p>", "</p>###SPLIT###<p>").split("###SPLIT###");
@@ -124,9 +129,14 @@ class App extends Component {
             range.selectNodeContents(text);
             selection.removeAllRanges();
             selection.addRange(range);
+
+            console.log(range)
         }
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        this.setState({
+            btnText: 'Copied'
+        })
     }
 
 
@@ -136,6 +146,7 @@ class App extends Component {
                 <div className={"div1"}>
                     <button onClick={this.merge}>Merge</button>
                     <button onClick={this.clear}>Clear</button>
+
                 </div>
                 <div className="div2">
                     <div className="div3">
@@ -174,6 +185,7 @@ class App extends Component {
                     </div>
 
                 </div>
+                <button onClick={this.copyTextWithStyles} >{this.state.btnText}</button>
                 <div dangerouslySetInnerHTML={{__html: this.state.result}} id={"result"}/>
 
                 {/*<div className="div2" id={"result"}>*/}

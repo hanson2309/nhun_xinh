@@ -13,17 +13,18 @@
 
 #result {
     margin: 20px;
+    font-size: 10pt;
 }
 
 @font-face {
-    font-family: 'HCRDotum';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff') format('woff');
+    font-family: 'HANBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/HANBatang.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 .kor {
-    font-family: 'HCRDotum', serif;
+    font-family: 'HANBatang', serif;
 }
 
 

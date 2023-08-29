@@ -51,18 +51,20 @@ class App extends Component {
 
         while (i < korList.length && j < vieList.length) {
             while (korList[i] === blankRow) {
-                result.push('<p class="kor">' + korList[i] + '</p>')
+                result.push(korList[i])
                 i ++;
             }
             while (vieList[j] === blankRow) {
-                result.push('<p class="vie">' + vieList[j] + '</p>')
+                result.push(vieList[j])
                 j ++;
             }
-            result.push('<p class="kor">' + korList[i] + '</p>')
-            result.push('<p class="vie">' + vieList[j] + '</p>')
+            result.push(korList[i].replace('<p>', '<p class="kor">'))
+            result.push(vieList[j].replace('<p>', '<p class="vie">'))
             i++;
             j++;
         }
+
+        console.log(result)
 
         this.setState({
             kor: this.state.kor,
@@ -127,7 +129,6 @@ class App extends Component {
             selection.removeAllRanges();
             selection.addRange(range);
 
-            console.log(range)
         }
         document.execCommand('copy');
         window.getSelection().removeAllRanges();

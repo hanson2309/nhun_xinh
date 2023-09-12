@@ -155,7 +155,8 @@ class App extends Component {
                                 const data = editor.getData();
                                 this.setState({
                                     kor: data,
-                                    vie: this.state.vie
+                                    vie: this.state.vie,
+                                    result: ""
                                 })
                             }}
                             config={{
@@ -172,7 +173,8 @@ class App extends Component {
                                 const data = editor.getData();
                                 this.setState({
                                     kor: this.state.kor,
-                                    vie: data
+                                    vie: data,
+                                    result: ""
                                 })
                             }}
                             config={{

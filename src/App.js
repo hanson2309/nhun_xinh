@@ -174,7 +174,7 @@ class App extends Component {
                                 this.setState({
                                     kor: this.state.kor,
                                     vie: data,
-                                    result: ""
+                                    result: "" 
                                 })
                             }}
                             config={{

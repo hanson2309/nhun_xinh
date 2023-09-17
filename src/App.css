@@ -1,10 +1,23 @@
 .div1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: white;
+    padding: 20px 15px;
     text-align: end;
+    border: black;
 }
+
+.div1 button {
+    margin-left: 8px;
+}
+
 .div2 {
     display: flex;
-    margin: 15px;
-    gap: 10px;
+    margin: 70px 15px 15px;
+    justify-content: space-between;
 }
 
 .div3 {

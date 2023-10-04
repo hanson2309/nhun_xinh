@@ -17,8 +17,8 @@ class App extends Component {
 
 
     state = {
-        kor: "<p>좌하 반투명 지도&nbsp;cg</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>완도군 노화읍 복고리 해상</p><p>&nbsp;</p><p>&nbsp;</p><p>신광하 기자</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>좌하 반투명&nbsp;cg</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>◀ＩＮＴ▶&nbsp;정진수 완도군 노화읍 복고리&nbsp;</p><p>올해 유독 더&nbsp;(전복)출하량이 감소되고&nbsp;</p><p>어민들이 아주 시름이 좀 높습니다. &nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>전복 소비부진 청년 어민 파산위기 내몰려</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>◀ＩＮＴ▶&nbsp;김준혁 완도군 노화읍장</p><p>(귀어한 뒤)&nbsp;빚으로&nbsp;(전복양식업을)했던 분들은&nbsp;</p><p>뭐 원금하고 이자하고 같이 나가야 되는&nbsp;</p><p>그런 지금 시기가 도래해서 그런 부분이 있다&nbsp;</p><p>보니까,&nbsp;</p><p>좀 더 힘들어진 거 같고..</p><p>&nbsp;</p><p>영상취재 조성택</p><p>cg &nbsp;이희정</p>",
-        vie: "<p>좌하 반투명 지도&nbsp;cg</p><p>Bokgo-ri, Nohwa-eup, Wando-gun</p><p>Phóng viên Shin Kwangha</p><p>좌하 반투명&nbsp;cg</p><p>◀ＩＮＴ▶ Jung Jinsoo, Bokgori, Nohwa-eup, Wando-gun</p><p>Năm nay, các chuyến hàng (bào ngư) giảm, ngư dân rất lo lắng.</p><p>Ngư dân trẻ phá sản vì bào ngư ế ẩm</p><p>◀ＩＮＴ▶ Kim Joonhyuk, Thị trưởng Nohwa-eup, Wando-gun</p><p>Những người đã (nuôi bào ngư) đã mắc nợ (sau khi quay trở lại với như nghiệp) nay lại phải trả gốc và lãi cùng lúc nên dẫn đến thời ký như vậy. Tình hình hiện tại càng trở nên khó khăn hơn.</p><p>Phóng viên hiện trường Cho Sungtaek</p><p>cg Lee Heejung</p>",
+        kor: "",
+        vie: "",
         result: "",
         btnText: 'Copy'
     }

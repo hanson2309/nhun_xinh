@@ -82,13 +82,6 @@ class App extends Component {
         return src.replaceAll("</p><p>", "</p>###SPLIT###<p>").split("###SPLIT###");
     }
 
-    clear = () => {
-        this.setState({
-            kor: "KOREAN",
-            vie: "VIETNAMESE",
-            result: ""
-        })
-    }
     copyTextWithStyles = (element) => {
 
         let doc = document
@@ -121,7 +114,6 @@ class App extends Component {
                 <div className={"div1"}>
                     {/*<button onClick={this.mergeLeft}>Merge Left Column</button>*/}
                     <button onClick={this.mergeRight}>Merge</button>
-                    <button onClick={this.clear}>Clear</button>
                     <button onClick={this.copyTextWithStyles}
                             disabled={this.state.result.length === 0}>{this.state.btnText}</button>
                 </div>

@@ -143,6 +143,7 @@ class App extends Component {
                             data={this.state.vie}
                             onChange={(event, editor) => {
                                 const data = editor.getData();
+                                console.log(data)
                                 this.setState({
                                     kor: this.state.kor,
                                     vie: data,

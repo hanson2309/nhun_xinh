@@ -1,10 +1,15 @@
+.App {
+    background-color: #313437;
+    min-height: 100vh;
+}
+
 .div1 {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
-    background: white;
+    z-index: 10;
+    background: transparent;
     padding: 20px 15px;
     text-align: end;
     border: black;
@@ -16,7 +21,8 @@
 
 .div2 {
     display: flex;
-    margin: 70px 15px 15px;
+    margin: 0 15px 15px 15px;
+    padding-top: 80px;
     justify-content: space-between;
 }
 
@@ -26,6 +32,7 @@
 
 #result {
     margin: 20px;
+    padding-bottom: 20px;
     font-size: 10pt;
 }
 
@@ -49,5 +56,88 @@
     line-height: 1.6;
     margin-top: 2px;
     margin-bottom: 8px;
+}
+
+.float_right_bottom_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.green-btn {
+
+    background-color: rgb(9, 128, 76);
+    box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+    color: rgb(255, 255, 255);
+
+}
+
+.green-btn:hover:enabled {
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 97, 73);
+    box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+}
+
+
+.red-btn {
+
+    background-color: #c42f2f;
+    box-shadow: #c20000;
+    color: rgb(255, 255, 255);
+
+}
+
+.red-btn:hover:enabled {
+    color: rgb(255, 255, 255);
+    background-color: #c50303;
+    box-shadow:  rgba(232, 81, 81, 0.4) 0px 2px 3px, rgb(231, 195, 195) 0px 0px 0px 3px;
+}
+
+
+.histories-btn {
+
+    background-color: rgb(9, 51, 128);
+    box-shadow: rgba(19, 107, 170, 0.4) 0px 2px 3px;
+    color: rgb(255, 255, 255);
+
+}
+
+.histories-btn:hover:enabled {
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 45, 97);
+    box-shadow: rgba(19, 84, 170, 0.4) 0px 2px 3px, rgb(195, 203, 231) 0px 0px 0px 3px;
+}
+
+.btn {
+    display: inline-block;
+    outline: 0;
+    appearance: none;
+    padding: 0px 12px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    height: 36px;
+    transition: all 150ms ease-in-out 0s;
+}
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.histories-drawer {
+    height: 70vh;
+}
+.histories-group {
+    max-height: 500px;
+}
+.ant-card{
+    width: 100%;
+    overflow-y: scroll;
 }
 
